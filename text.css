@@ -1,0 +1,29 @@
+.container .cp-btn-2 {
+  border: unset;
+  outline: unset;
+  position: relative;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  
+}
+.container .cp-btn-2 {
+  background: linear-gradient(70deg, #0ebeff, #ffdd40, #ae63e4, #47cf73, #0ebeff, #ffdd40, #ae63e4, #47cf73);
+  animation: rainbow-border 5s linear infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+}
+
+@-webkit-keyframes rainbow-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}

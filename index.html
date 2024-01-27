@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="text.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jireh So</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jireh So</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic1.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <div class="container">
+          <div class="cp-btn-2">
+            <h1 class="title"><span id='text'></span></h1>
+          </div>
+        </div>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/jireh-so-367171246/'"
+          />
+          <img
+            src="./assets/github_light.png"
+            src-light="./assets/github_light.png"
+            src-dark="./assets/github_dark.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/Jireh-So'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <div class="container">
+        <div class="cp-btn-2">
+          <h1 class="title"  >About Me</h1>
+        </div>
+      </div>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education_light.png"
+                src-light="./assets/education_light.png"
+                src-dark="./assets/education_dark.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />University of St. La Salle Bacolod City</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience_light.png"
+                src-light="./assets/experience_light.png"
+                src-dark="./assets/experience_dark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Student Intern<br />IReply Back Office Services, Inc.</p>
+            </div>
+            
+          </div>
+          <div class="text-container">
+            <p>
+              As a recent graduate specialized in website design, I possess strong creative and analytical skills. A dedicated team player with keen attention to detail, I excel in troubleshooting and problem-solving for seamless web application functionality. Eager to contribute and learn in a professional environment,
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <div class="container">
+        <div class="cp-btn-2">
+          <h1 class="title">Skills</h1>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Hard Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS Office</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI/UX</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Entry</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TroubleShooting</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Design</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Programming</h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Good problem - solving</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time management</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Creative mindset</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Building solutions</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> Pay attention to detail</h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <div class="container">
+        <div class="cp-btn-2">
+          <h1 class="title">Achievements</h1>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Diploma.PNG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Diploma</h2>
+            <div class="btn-container">
+              <p>Graduated with Academic Achievement</p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/cer1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Certificate of Completion</h2>
+            <div class="btn-container">
+              <p>Data Science with Python</p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/cer2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Certificate of Completion</h2>
+            <div class="btn-container">
+              <p>Data Visualisation in Tableau</p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Intern - So (1).png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Completing internship</h2>
+            <!-- <p>ghfhdhdhdhdhdfghg</p> -->
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <div class="container">
+        <div class="cp-btn-2">
+          <h1 class="title">Contact Me</h1>
+        </div>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email_light.png"
+            src-light="./assets/email_light.png"
+            src-dark="./assets/email_dark.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jirehso682001@gmail.com">jirehso682001@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/jireh-so-367171246/'"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Jireh So. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="text_animation.js"></script>
+  </body>
+</html>
