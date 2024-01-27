@@ -7,11 +7,12 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="text.css" />
+    <link rel="stylesheet" href="preloader.css">
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <button onclick="location.reload(true);" class="logo">Jireh So</button>
+      <div onclick="location.reload(true);" class="logo">Jireh So</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -433,6 +434,7 @@
         </div>
       </div>
     </section>
+    <div class="loader" id="preloader"></div>
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -448,5 +450,16 @@
     </footer>
     <script src="script.js"></script>
     <script src="text_animation.js"></script>
+    <script>
+      // Function to hide the loader after 5 seconds
+      setTimeout(function() {
+        const loader = document.getElementById('preloader');
+        loader.classList.add('loader--hidden');
+        
+        loader.addEventListener('transitionend', () => {
+          document.body.removeChild(loader);
+        });
+      }, 5000);
+    </script>
   </body>
 </html>
