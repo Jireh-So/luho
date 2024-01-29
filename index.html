@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- loader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
     <nav id="desktop-nav">
       <div onclick="location.reload(true);" class="logo">Jireh So</div>
       <div>
@@ -450,16 +456,21 @@
     </footer>
     <script src="script.js"></script>
     <script src="text_animation.js"></script>
-    <script>
-      // Function to hide the loader after 5 seconds
-      setTimeout(function() {
-        const loader = document.getElementById('preloader');
-        loader.classList.add('loader--hidden');
+      <script>
+        function hideLoader() {
+            // Add the 'loaded' class to the body
+            document.body.classList.add('loaded');
+            
+            // After 4 seconds, hide the loader wrapper
+            setTimeout(function(){
+                document.getElementById('loader-wrapper').style.display = 'none';
+            }, 4000);
+        }
         
-        loader.addEventListener('transitionend', () => {
-          document.body.removeChild(loader);
-        });
-      }, 5000);
+        // Call the hideLoader function when the window is fully loaded
+        window.onload = function() {
+            hideLoader();
+        };
     </script>
   </body>
 </html>
