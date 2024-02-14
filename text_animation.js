@@ -1,4 +1,4 @@
-consoleText(['Web Design','UI/UX Design','Data Entry'], 'text');
+consoleText(['Computer Science Graduate','Web Designer','UI/UX Designer','Data Entry'], 'text');
 
 function consoleText(words, id) {
   var visible = true;
@@ -7,7 +7,7 @@ function consoleText(words, id) {
   var x = 1;
   var waiting = false;
   var target = document.getElementById(id);
-  target.setAttribute('style', 'color: black'); // Set color to black
+  target.setAttribute('style', 'color: gray'); 
   window.setInterval(function() {
     if (letterCount === 0 && waiting === false) {
       waiting = true;
@@ -16,7 +16,7 @@ function consoleText(words, id) {
         var usedWord = words.shift();
         words.push(usedWord);
         x = 1;
-        target.setAttribute('style', 'color: black'); // Set color to black
+        target.setAttribute('style', 'color: gray'); 
         letterCount += x;
         waiting = false;
       }, 1000);
