@@ -1,4 +1,4 @@
-consoleText(['Computer Science Graduate','Web Designer','UI/UX Designer','Data Entry'], 'text');
+consoleText(['Web Designer','UI/UX Designer','Data Entry'], 'text');
 
 function consoleText(words, id) {
   var visible = true;
